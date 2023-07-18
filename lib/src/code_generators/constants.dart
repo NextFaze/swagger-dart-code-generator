@@ -86,6 +86,7 @@ const kCookie = 'cookie';
 const kArray = 'array';
 const kEnum = 'enum';
 const kBody = 'body';
+const kQuery = 'query';
 const kPartFile = 'partFile';
 const kPart = 'part';
 

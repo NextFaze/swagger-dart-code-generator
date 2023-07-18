@@ -92,15 +92,13 @@ class SwaggerRequestsGenerator extends SwaggerGeneratorBase {
             ..name = 'httpClient',
         ))
         ..optionalParameters.add(Parameter(
-              (p) =>
-          p
+          (p) => p
             ..named = true
             ..type = Reference('http.Client?')
             ..name = 'httpClient',
         ))
         ..optionalParameters.add(Parameter(
-              (p) =>
-          p
+          (p) => p
             ..named = true
             ..type = Reference('Authenticator?')
             ..name = 'authenticator',
@@ -456,6 +454,7 @@ class SwaggerRequestsGenerator extends SwaggerGeneratorBase {
         {
           kPath: literalString(path),
           if (hasOptionalBody) 'optionalBody': refer(true.toString()),
+          'useBrackets': refer(true.toString())
         },
       ),
       if (isMultipart)
